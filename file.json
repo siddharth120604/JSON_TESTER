@@ -1,0 +1,39 @@
+{
+    "restrictions": {
+       "zdt": {
+          "brightnessAllowed": false,
+          "screenTimeoutAllowed": false,
+          "bluetoothAllowed": false,
+          "factoryResetAllowed": false,
+          "addUserAllowed": false,
+          "airplaneModeAllowed": false 
+       },
+       "nonzdt": {
+          "wifi": {
+             "SSID": "xxxxx",
+             "password": "xxxxx"
+          }
+       }
+    },
+    "certificates": {
+       "zdt": {
+          "MITMProxyCert": "https://xxxxxxxx",
+          "AndroidLTCert": "https://xxxxxxxx",
+          "MITMLittleProxyCert": "https://xxxxxxxx"
+       },
+       "nonzdt": {}
+    },
+    "packages": {
+       "zdt": {
+          "chrome": {
+             "apkUri": "https://xxxxxxx",
+             "version": "v0.1"
+          },
+          "yandex": {
+             "apkUri": "https://xxxxxxxx",
+             "version": "v1.1"
+          }
+       },
+       "nonzdt": {}
+    }
+ }
