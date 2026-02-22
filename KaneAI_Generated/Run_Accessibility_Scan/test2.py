@@ -53,8 +53,18 @@ try:
         driver.execute_script("arguments[0].click();", element)
     driver.implicitly_wait(6)
 
-    # Step - 3 : accessibility scan
-    print('Step 3: Accessibility - accessibility scan')
+    # Step - 3 : Click toast button
+    element_locators = ['//android.widget.Button[@resource-id="com.lambdatest.proverbial:id/toast"]']
+    element = get_element(driver, element_locators)
+
+    try:
+        element.click()
+    except:
+        driver.execute_script("arguments[0].click();", element)
+    driver.implicitly_wait(6)
+
+    # Step - 4 : accessibility scan
+    print('Step 4: Accessibility - accessibility scan')
 
     driver.quit()
 except Exception as e:
