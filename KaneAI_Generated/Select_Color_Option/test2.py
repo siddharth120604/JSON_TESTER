@@ -41,6 +41,10 @@ try:
         element.click()
     except:
         driver.execute_script("arguments[0].click();", element)
+    driver.implicitly_wait(6)
+
+    # Step - 2 : accessibility scan
+    print('Step 2: Accessibility - accessibility scan')
 
     driver.quit()
 except Exception as e:
