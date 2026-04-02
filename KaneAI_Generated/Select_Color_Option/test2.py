@@ -33,7 +33,7 @@ try:
         return None
     driver.implicitly_wait(6)
 
-    # Step - 1 : Click on the COLOR button in the top left group
+    # Step - 1 : Click color button
     element_locators = ['//android.widget.Button[@resource-id="com.lambdatest.proverbial:id/color"]']
     element = get_element(driver, element_locators)
 
